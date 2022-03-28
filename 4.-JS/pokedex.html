@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="./pokedex.css">
+    
+</head>
+<body>
+
+    <header>
+        <h1>Pokedex LaunchX</h1>
+    </header>
+    
+    <section class="cuerpo1">
+
+        <div class="busqueda">
+            <input type="text" placeholder="Escribe un pokemon" id="pokeName" name="pokeName"><br><br>
+
+            <button onclick="fetchPokemon()">Buscar Pokemon</button><br>
+        </div>
+        
+        <div class="pokemon">
+            <h2 id="pokeNombre">Pokemon</h2>
+
+            <img src="./imagenes/pokeball.png" alt="Pokemon" id="pokeImg" width="150px"><br>
+
+            <p id="pokeTipo">Tipo</p>
+        </div>
+
+    </section>
+
+    <section class="cuerpo2">
+        
+        <div class="stats">
+            <p id="pkHp">Hp: </p>
+        <p id="pkAtaque">Ataque: </p>
+        <p id="pkDefensa">Defensa:</p>
+        <p id="pkAtEspecial">Ataque especial:</p>
+        <p id="pkDefEspecial">Defensa especial:</p>
+        <p id="pkVelocidad">Velocidad:</p>
+        </div>
+        
+        <div class="moves">
+            <p>Movimientos:</p>
+        <table border="1px">
+            <tr >
+                <th width="250px" id="pkMov1">  </th>
+                <th width="250px" id="pkMov2">  </th>
+            </tr>
+            <tr >
+                <th id="pkMov3">  </th>
+                <th id="pkMov4">  </th>
+            </tr>
+        </table>
+        </div>
+        
+    </section>
+    
+
+
+</body>
+<footer>
+    <script src="./pokedex.js"></script>
+</footer>
+</html>
